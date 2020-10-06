@@ -1,11 +1,11 @@
 /// <reference types="node" />
 
 declare module "snowflake-sdk" {
-  export const ocspModes = {
-    FAIL_CLOSED: "FAIL_CLOSED",
-    FAIL_OPEN: "FAIL_OPEN",
-    INSECURE: "INSECURE"
-  } as const;
+  export enum ocspModes {
+    FAIL_CLOSED = "FAIL_CLOSED",
+    FAIL_OPEN = "FAIL_OPEN",
+    INSECURE = "INSECURE"
+  }
 
   export interface Options {
     account: string;
@@ -115,9 +115,9 @@ declare module "snowflake-sdk" {
    */
   export function configure(options?: ConfigureOptions): void;
 
-  export const STRING = "STRING" as const;
-  export const BOOLEAN = "BOOLEAN" as const;
-  export const NUMBER = "NUMBER" as const;
-  export const DATE = "DATE" as const;
-  export const JSON = "JSON" as const;
+  export const STRING = "STRING";
+  export const BOOLEAN = "BOOLEAN";
+  export const NUMBER = "NUMBER";
+  export const DATE = "DATE";
+  export const JSON = "JSON";
 }
