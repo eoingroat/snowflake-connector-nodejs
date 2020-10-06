@@ -100,7 +100,7 @@ declare module "snowflake-sdk" {
   /**
    * Serializes a given connection.
    */
-  export function serializeConnection(connection): string;
+  export function serializeConnection(connection: Connection): string;
 
   export type LogTags = "ERROR" | "WARN" | "INFO" | "DEBUG" | "TRACE";
 
